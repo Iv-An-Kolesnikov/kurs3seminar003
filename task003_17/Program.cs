@@ -4,10 +4,7 @@
 Console.Clear();
 void Proverka0(double z, string number)
 {
-    if (z == 0)
-    {
-        Console.WriteLine($"Число {number} равно 0, введите числа не равные 0");
-    }
+    if (z == 0) Console.WriteLine($"Число {number} равно 0, введите числа не равные 0");
 }
 Console.Write("Введите пожалуйста координату X не равную 0: ");
 double numX = Convert.ToInt32(Console.ReadLine());
