@@ -10,9 +10,7 @@ void Examination(double z)
 Console.Write("Введите пожалуйста номер четверти, число должно быть от 1 до 4: ");
 double num = Convert.ToInt32(Console.ReadLine());
 Examination(num);
-double numX = 9999;
-double numY = 9999;
-if (num == 1) Console.Write($"Диапазон от X={numX} до Y={numY}");
-if (num == 2) Console.Write($"Диапазон от X={numX * (-1)} до Y={numY}");
-if (num == 3) Console.Write($"Диапазон от X={numX * (-1)} до Y={numY * (-1)}");
-if (num == 4) Console.Write($"Диапазон от X={numX} до Y={numY * (-1)}");
+if (num == 1) Console.Write($"Диапазон от нуля до +бесконечности по X и Y");
+if (num == 2) Console.Write($"Диапазон от нуля до -бесконечности по X и до +бесконечности по Y");
+if (num == 3) Console.Write($"Диапазон от нуля до -бесконечности по X и Y");
+if (num == 4) Console.Write($"Диапазон от нуля до +бесконечности по X и до -бесконечности по Y");
